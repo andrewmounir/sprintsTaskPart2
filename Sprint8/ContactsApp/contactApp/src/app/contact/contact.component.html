@@ -1,0 +1,63 @@
+<form [formGroup]='form'>
+
+    <div class="form-group">
+        <label for="contactName">contact Name</label>
+        <input type="text" formControlName="contactName" class="form-control" name="contactName"
+            placeholder="enter contact name " [(ngModel)]="NameOfUser">
+
+
+        <label for="contactNumber">contact Number</label>
+        <input class="form-control" type="text" formControlName="contactNumber" name="contactNumber"
+            placeholder="enter contact Number " [(ngModel)]="NumberOfUser">
+
+        <button class="btn btn-lg " type="submit" (click)="addToList()">Add</button>
+        <button style="margin:0 25px;" class="btn btn-lg" (click)="toggleContactList()">View All/HideAll</button>
+
+        <button style="margin:0 25px;" class="btn btn-lg " (click)="searchArray()">Search</button>
+
+
+    </div>
+</form>
+
+
+
+<!-- ngModel -->
+<section id="myList" *ngIf="showContactList">
+    <ul *ngFor="let contact of contactList ; let i = index">
+        <div id="contact-{{i}}">
+            <p>{{contact.name}}</p>
+            <li>{{contact.num}} </li>
+            <button style="margin:0 25px;" class="btn btn-md " (click)="ShoweditDetails()">Edit</button>
+            <button style="margin:0 25px;" class="btn btn-md " (click)="deleteButton(i)">Delete</button>
+            <div *ngIf="showEditInputs">
+                <input id="editInputName{{i}}" type="text" placeholder="change Name" name="editedName"
+                    [(ngModel)]="editedName">
+                <button (click)="saveChanges(i)">edit
+                    changes</button>
+                <input id="editInputNumber{{i}}" type="text" placeholder="change Number"
+                    [(ngModel)]="editNumber"><button (click)="saveChanges(i)">edit
+                    changes</button>
+            </div>
+
+
+            <hr>
+        </div>
+
+
+
+
+
+    </ul>
+
+</section>
+<div *ngIf="showSearchList">
+    <ul *ngFor="let list of listSearch ; let i = index">
+        <h1>Search Result:</h1>
+        <p>{{list.name}}</p>
+        <li>{{list.num}} </li>
+        <button style="margin:0 25px;" class="btn btn-md ">Edit</button>
+        <button style="margin:0 25px;" class="btn btn-md " (click)="deleteButton(i)">Delete</button>
+        <hr>
+
+    </ul>
+</div>
