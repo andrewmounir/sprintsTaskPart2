@@ -2,11 +2,11 @@
 
 ## Topics Coverd In This Research
 
-1. [Variables (Case Sensitivity)](#Variables)
-2. [Functions (Case Sensitivity)](#Functions)
-3. [ReservedWords (Overview)](#ReservedWords)
+1. [Variables (Case Sensitivity)](#Variables-case-sensitivity)
+2. [Functions (Case Sensitivity)](#functions-case-sensitivity)
+3. [ReservedWords (Overview)](#reservedwords-overview)
 
-# Variables (Case Sensitivity)
+## Variables (Case Sensitivity)
 
 In PHP, variables are case-sensitive, which means that even a slight difference in letter case makes them distinct. This applies to both the declaration and the usage of variables. For example:
 
@@ -18,7 +18,7 @@ In PHP, variables are case-sensitive, which means that even a slight difference 
 
 **Here, $myVariable and $myvariable are treated as two separate variables. This case sensitivity can be both advantageous and challenging. It allows for creating variables with different purposes, but it also requires careful naming to avoid confusion.**
 
-# Functions (Case Sensitivity)
+## Functions (Case Sensitivity)
 
 Function names in PHP are also case-insensitive when calling them. This means you can use different cases to call the same function. However, when defining functions, you need to match the case exactly. For instance:
 
@@ -31,7 +31,7 @@ Function names in PHP are also case-insensitive when calling them. This means yo
 
 **Both myFunction() and MyFunction() will call the same function defined as myFunction().**
 
-# ReservedWords (Overview)
+## ReservedWords (Overview)
 
 Reserved words, also known as keywords, are terms predefined by PHP and have specific meanings within the language. They're used for various purposes and should not be used as custom identifiers (variable, function, class names, etc.). Some examples of reserved words include:
 
