@@ -2,9 +2,9 @@
 
 ## Topics Coverd In This Research
 
-1. [Variables(Case Sensitive)](#Variables)
-2. [Functions(Case Senstive)](#Functions)
-3. [Reserved KeyWords(overView)](#ReservedWords)
+1. -[Variables(Case Sensitive)](#Variables)
+2. -[Functions(Case Senstive)](#Functions)
+3. -[Reserved KeyWords(overView)](#ReservedWords)
 
 # Variables (Case Sensitivity):
 
@@ -13,8 +13,8 @@ In PHP, variables are case-sensitive, which means that even a slight difference 
 > "$myVariable = "Hello";
 > $myvariable = "World";
 
-echo $myVariable; // Outputs: Hello
-echo $myvariable; // Outputs: World"
+> echo $myVariable; // Outputs: Hello
+> echo $myvariable; // Outputs: World"
 
 **Here, $myVariable and $myvariable are treated as two separate variables. This case sensitivity can be both advantageous and challenging. It allows for creating variables with different purposes, but it also requires careful naming to avoid confusion.**
 
@@ -26,8 +26,8 @@ Function names in PHP are also case-insensitive when calling them. This means yo
 > echo "Hello!";
 > }
 
-myFunction(); // Outputs: Hello
-MyFunction(); // Also Outputs: Hello"
+> myFunction(); // Outputs: Hello
+> MyFunction(); // Also Outputs: Hello"
 
 **Both myFunction() and MyFunction() will call the same function defined as myFunction().**
 
