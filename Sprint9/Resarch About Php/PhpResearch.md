@@ -11,8 +11,8 @@
 
 In PHP, variables are case-sensitive, which means that even a slight difference in letter case makes them distinct. This applies to both the declaration and the usage of variables. For example:
 
-> "$myVariable = "Hello";
-> $myvariable = "World";
+(`$myVariable = "Hello";
+ $myvariable = "World";`)
 
 > echo $myVariable; // Outputs: Hello
 > echo $myvariable; // Outputs: World"
