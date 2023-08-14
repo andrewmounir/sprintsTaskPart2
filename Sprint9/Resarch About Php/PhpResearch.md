@@ -11,8 +11,8 @@
 
 In PHP, variables are case-sensitive, which means that even a slight difference in letter case makes them distinct. This applies to both the declaration and the usage of variables. For example:
 
-(`$myVariable = "Hello";
- $myvariable = "World";`)
+`$myVariable = "Hello";
+ $myvariable = "World";`
 
 > echo $myVariable; // Outputs: Hello
 > echo $myvariable; // Outputs: World"
@@ -23,12 +23,12 @@ In PHP, variables are case-sensitive, which means that even a slight difference 
 
 Function names in PHP are also case-insensitive when calling them. This means you can use different cases to call the same function. However, when defining functions, you need to match the case exactly. For instance:
 
-> "function myFunction() {
-> echo "Hello!";
-> }
+`function myFunction() {
+echo "Hello!";
+ }`
 
-> myFunction(); // Outputs: Hello"
- (MyFunction(); // Also Outputs: Hello)
+> "myFunction(); // Outputs: Hello"
+> "MyFunction(); // Also Outputs: Hello"
 
 **Both myFunction() and MyFunction() will call the same function defined as myFunction().**
 
