@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  border-radius: 1px;
+
+  border-color: black;
+  border-style: solid;
+}
+
+.navButton {
+  background-color: yellowgreen;
+  margin-left: 5%;
+  width: 10%;
+}
+
+.tableHolder {
+  margin-top: 20px;
+  display: flex;
+}

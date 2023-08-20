@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.profile {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.skills {
+  margin-top: 15px;
+  text-align: left;
+}
+.skills h3 {
+  margin-top: 0;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.skills li {
+  margin: 5px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.skills li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
