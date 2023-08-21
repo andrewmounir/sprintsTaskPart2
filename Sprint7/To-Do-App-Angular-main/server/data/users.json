@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "mickey",
+        "avatar": "https://robohash.org/zucker-ping.png",
+        "username": "disney",
+        "password": "osnplus"
+    },
+    {
+        "id": 2,
+        "name": "naruto",
+        "avatar": " https://robohash.org/cat",
+        "username": "naruto",
+        "password": "opera"
+    },
+    {
+        "id": 3,
+        "name": "heroacademia",
+        "avatar": "https://robohash.org/dog",
+        "username": "hero",
+        "password": "12"
+    }
+]

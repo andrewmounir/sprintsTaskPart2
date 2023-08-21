@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<p class="title" *ngIf="load">Choose your account</p>
+<p class="title" *ngIf="!load">No available users</p>
+
+<div class="card-list">
+    <mat-card *ngFor="let item of usersData" class="card">
+      <div class="card-content">
+        <div class="card-logo"><img [src]="item.avatar"/></div>
+        <div class="card-name">{{item.name}}</div>
+
+        <div class="form-group">
+          <input type="password" class="form-control password"
+            placeholder="User password" [(ngModel)]="passwords[item.id]">
+        </div>
+        <button class="btn btn-primary" [disabled]="!passwords[item.id]"
+          (click)="login(item.id)">Login</button>
+      </div>
+    </mat-card>
+</div>

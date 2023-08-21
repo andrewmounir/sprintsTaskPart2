@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Add New Todo</h2>
+<div mat-dialog-content>
+  <div class="form-group">
+    <label for="name">Task description</label>
+    <input type="text" class="form-control input" id="name" [(ngModel)]="newName"/>
+  </div>
+
+  <div class="options">
+    <button mat-button (click)="onSave()" class="btn btn-danger">Save</button>
+    <button mat-button (click)="onCancel()" class="btn btn-primary">Cancel</button>
+</div>
+</div>
+

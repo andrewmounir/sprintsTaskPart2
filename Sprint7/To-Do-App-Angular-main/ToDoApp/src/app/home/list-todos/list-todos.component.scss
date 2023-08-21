@@ -1,0 +1,96 @@
+.title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .create {
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+    
+  .card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+    
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .card-logo img {
+    width: 100px;
+    height: 100px;
+  }
+    
+  .card-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .password {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+.item-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-info {
+    font-weight: bold;
+    font-size: 22px;
+    color: blue;
+}
+
+  .completed {
+    background-color: lightgray;
+  }
+
+  .checkbox {
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .check {
+    font-size: 20px;
+  }
+  
+  .delete-button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<ng-container *ngIf="load; else no">
+    <p class="title" *ngIf="load">User Todos:</p>
+    <button class="btn btn-primary create" (click)="openDialog()">Create new todo</button>
+</ng-container>
+
+<ng-template #no>
+    <p class="title">No available todos</p>
+</ng-template>
+
+<div class="card-list">
+    <mat-card *ngFor="let item of listData" class="card" [ngClass]="{'completed': item.completed}">
+      <div class="card-content">
+        <div class="item-info"><p>{{item.task}}</p></div>
+        <div class="item-actions">
+            <label>
+                <input class="checkbox" type="checkbox" [checked]="item.completed" (change)="toggle(item)"/>
+                <span class="check">Completed</span>
+            </label>
+            <button class="delete-button" (click)="deleteTask(item.id)">Delete</button>
+        </div>
+      </div>
+    </mat-card>
+</div>
