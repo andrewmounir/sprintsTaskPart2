@@ -1,0 +1,1 @@
+## here is the project connected with my Database with (migrations,seeders) , added routes with controllers please note it may still be missing some features due to that i am still learning larvel and will do the final project with it , will revert back to fix all the code problems wether its missing or uncomplete
