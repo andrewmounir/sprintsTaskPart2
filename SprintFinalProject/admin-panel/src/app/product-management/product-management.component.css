@@ -1,0 +1,19 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 30%;
+    height: auto;
+  }

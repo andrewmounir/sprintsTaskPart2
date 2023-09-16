@@ -1,0 +1,29 @@
+
+
+
+  <mat-card class="registration-card">
+    <mat-card-header>
+      <mat-card-title>Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()" class="registration-form">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Full Name" [(ngModel)]="fullName" name="fullName" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Address" [(ngModel)]="address" name="address" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Phone" [(ngModel)]="phone" name="phone" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Sign Up</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

@@ -1,0 +1,40 @@
+
+
+<div fxLayout="row" fxLayoutAlign="start center" class="select-container">
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select [(ngModel)]="selectedCategory" (change)="filterProducts()">
+        <mat-option value="" selected>Show All</mat-option>
+        <mat-option *ngFor="let category of categories" [value]="category">{{ category }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  
+  <div class="show-all-button-container">
+    <button mat-raised-button color="primary" (click)="selectedCategory = null; filterProducts()">Show All</button>
+  </div>
+  
+  <div class="search-input-container">
+    <mat-form-field>
+      <input matInput [(ngModel)]="searchInput" (input)="filterProducts()" placeholder="Search...">
+    </mat-form-field>
+  </div>
+  
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center" class="product-card-container">
+    <div fxFlex="33%" fxFlex.xs="100%" class="product-card" *ngFor="let product of filteredProducts">
+      <h2>{{ product.name | truncate: 20 }}</h2>
+      <p>{{product.price}}</p>
+      
+      <img [src]="'http://localhost:8000' + product.image" width="100%" height="auto" alt="Product Image" class="product-image">
+      <div class="button-container">
+        <button mat-raised-button color="primary" class="purchase-button">Purchase</button>
+        <button mat-raised-button color="accent" (click)="viewProductDetails(product.id)">View Details</button>
+
+      </div>
+    </div>
+  </div>
+  
+
+  
+ 
+

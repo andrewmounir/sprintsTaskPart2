@@ -1,0 +1,20 @@
+
+
+mat-toolbar {
+  background-color: #1976D2; 
+  color: white; 
+  display: flex;
+  justify-content: space-around;
+}
+
+button.mat-button {
+  color: white; 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button.mat-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  transition: background-color 0.3s;
+}

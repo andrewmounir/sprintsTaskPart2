@@ -1,0 +1,22 @@
+<div class="product-detail-container" *ngIf="product">
+
+  <h2>{{ product.title }}</h2>
+
+ 
+  <img [src]="'http://localhost:8000' + product.image" width="20%" height="auto" alt="Product Image" 
+>
+ 
+  <div class="product-details">
+    <p>{{ product.description }}</p>
+    <p>Price: ${{ product.price }}</p>
+    <p>Stock: {{ product.stock }}</p>
+  </div>
+
+  
+  <button mat-raised-button color="primary" class="purchase-button">Purchase</button>
+</div>
+
+<div *ngIf="!product">
+
+  <p>Product not found or invalid.</p>
+</div>

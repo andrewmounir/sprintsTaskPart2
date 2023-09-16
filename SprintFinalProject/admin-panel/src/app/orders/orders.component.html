@@ -1,0 +1,32 @@
+<!-- order.component.html -->
+
+
+<!-- View Orders Section -->
+<h1>View Orders</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Customer Name</th>
+      <th>Order Date</th>
+      <th>Total Amount</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Loop through orders and display them -->
+    <tr *ngFor="let order of orders">
+      <td>{{ order.id }}</td>
+      <td>{{ order.customerName }}</td>
+      <td>{{ order.orderDate }}</td>
+      <td>{{ order.totalAmount  }}</td>
+      <td>
+        <button (click)="editOrder(order)">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Edit Orders Section -->
+<h1>Edit Orders</h1>
+<!-- Edit orders form goes here -->

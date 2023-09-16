@@ -1,0 +1,68 @@
+<mat-card class="product-form-card">
+  <mat-card-header>
+    <mat-card-title>Add Product</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="onSubmit()" class="product-form">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Product Name" [(ngModel)]="productName" name="productName" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Title" [(ngModel)]="productTitle" name="productTitle" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput type="number" placeholder="Price" [(ngModel)]="productPrice" name="productPrice" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="category" [(ngModel)]="productCategory" name="category" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <textarea matInput placeholder="Description" [(ngModel)]="productDescription" name="productDescription" required></textarea>
+      </mat-form-field>
+
+      <!-- Add a file input for image upload -->
+      <input type="file" (change)="onImageSelected($event)" accept="image/*">
+
+
+      <button mat-raised-button color="primary" type="submit">Add Product</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+
+<button mat-raised-button color="primary" (click)="toggleProductForm()">Toggle Product Form</button>
+
+<div *ngIf="showProductList">
+  <!-- Display the list of products from the backend -->
+
+
+
+
+  <h1>Products</h1>
+  <ul>
+    <li *ngFor="let product of products">
+      <div class="product-card">
+        <img [src]="'http://localhost:8000' + product.image" alt="{{ product.name }}">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.category }}</p>
+
+        <p>{{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <!-- Add any other product information you want to display -->
+      </div>
+       <!-- {{ product.name }} - {{ product.price | currency: 'USD' }} 
+     
+
+      <img [src]="'http://localhost:8000' + product.image" alt="{{ product.name }}" width="100" height="100">  -->
+
+   
+    </li>
+  </ul>
+
+
+
+
+
+
+
+</div>

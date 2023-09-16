@@ -1,0 +1,17 @@
+
+.login-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  

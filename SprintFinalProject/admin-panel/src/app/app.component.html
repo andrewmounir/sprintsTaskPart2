@@ -1,0 +1,9 @@
+
+<!-- <div *ngIf="isAuthenticated; else loginPage"> -->
+  <app-nav-component></app-nav-component>
+  <router-outlet></router-outlet>
+<!-- </div> -->
+<ng-template #loginPage>
+  <!-- The login component should go here -->
+  <app-login></app-login>
+</ng-template>
